@@ -1,0 +1,32 @@
+Minecraft chat helper with IME (Chinese, Japanese, Korean) support
+
+Usage:
+
+Linux:
+
+Dependencies: zenity, xclip, xdotool
+
+Under the control panel given by your Desktop Environment, add a hotkey, for
+example Super+T, to fire up minecraft-chat-helper.sh.
+
+When you are playing Minecraft, press Super+T, type what you want to say then
+click OK.
+
+Windows:
+
+To be implemented
+
+------------------------------------------------------------------------------
+
+Minecraft 中文聊天辅助工具
+
+使用方法：
+
+Linux：
+
+依赖项：zenity, xclip, xdotool
+
+在您的桌面环境提供的控制面板中，添加一组快捷键，比如 Super+T，来启动
+minecraft-chat-helper.sh 脚本。
+
+当进行 Minecraft 游戏的时候，按 Super+T，输入聊天内容并点击确定。
