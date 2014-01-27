@@ -22,6 +22,11 @@ properties, add a hotkey, for example Ctrl+Shift+Alt+T.
 When you are playing Minecraft, press Ctrl+Shift+Alt+T, type what you want to
 say then click OK.
 
+Restrictions:
+
+On Windows, you can not have two windows with the same title containing the
+string "Minecraft".
+
 ------------------------------------------------------------------------------
 
 Minecraft 中文聊天辅助工具
@@ -45,3 +50,7 @@ Windows：
 对话框，添加一组快捷键，比如 Ctrl+Shift+Alt+T。
 
 当进行 Minecraft 游戏的时候，按 Ctrl+Shift+Alt+T，输入聊天内容并嗲你就确定。
+
+局限性：
+
+在 Windows 上，您不能打开两个标题都含有“Minecraft”字样的窗口。
