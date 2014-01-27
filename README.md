@@ -51,7 +51,7 @@ Minecraft 中文聊天辅助工具
 在任意文件夹创建一个指向 `minecraft-chat-helper.vbs` 的快捷方式。右击，打开属性
 对话框，添加一组快捷键，比如 Ctrl+Shift+Alt+T。
 
-当进行 Minecraft 游戏的时候，按 Ctrl+Shift+Alt+T，输入聊天内容并嗲你就确定。
+当进行 Minecraft 游戏的时候，按 Ctrl+Shift+Alt+T，输入聊天内容并点击确定。
 
 ## 局限性：
 
