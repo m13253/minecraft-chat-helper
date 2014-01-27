@@ -34,4 +34,6 @@ xdotool key --clearmodifiers Escape
 sleep 0.25
 xdotool key t
 sleep 0.25
-xdotool key Control_L+v Return
+xdotool key Control_L+v
+sleep 0.25
+xdotool key Return
