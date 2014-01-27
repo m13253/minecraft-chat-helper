@@ -28,6 +28,14 @@ say then click OK.
 On Windows, you can not have two windows with the same title containing the
 string "Minecraft".
 
+## Copyright:
+
+This software is released under the MIT License. The original author is Star
+Brilliant.
+
+This software comes with **absolutely no warranty**, the author are not
+responsible for any potentialy damage caused by this software.
+
 ------------------------------------------------------------------------------
 
 Minecraft 中文聊天辅助工具
@@ -56,3 +64,9 @@ Minecraft 中文聊天辅助工具
 ## 局限性：
 
 在 Windows 上，您不能打开两个标题都含有“Minecraft”字样的窗口。
+
+## 版权：
+
+本软件以 MIT 许可协议发布。原作者是 Star Brilliant。
+
+本软件**不附带任何保证**，作者不承担本软件产生的任何潜在的损失。
