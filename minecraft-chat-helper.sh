@@ -22,3 +22,16 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
+set -e
+which zenity &>/dev/null || (echo '错误：Zenity 程序未安装。' >&2; exit 2)
+which xclip &>/dev/null || (echo '错误：XClip 程序未安装。' >&2; exit 2)
+which xdotool &>/dev/null || (echo '错误：XDoTool 程序未安装。' >&2; exit 2)
+_mcchat_clipboard=$(xclip -o -selection clipboard)
+_mcchat_input="$(zenity --entry --text '保持 Minecraft 处于暂停界面并在此输入聊天内容：' --title 'Minecraft 中文聊天辅助工具' --entry-text "$_mcchat_clipboard")"
+test -z "$_mcchat_input" && exit 0
+echo -n "$_mcchat_input" | xclip -selection clipboard
+xdotool key --clearmodifiers Escape
+sleep 0.25
+xdotool key t
+sleep 0.25
+xdotool key Control_L+v Return
