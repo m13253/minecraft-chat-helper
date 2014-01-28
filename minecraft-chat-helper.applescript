@@ -1,4 +1,4 @@
--- The MIT License (MIT)
+ï»¿-- The MIT License (MIT)
 --
 -- Copyright (c) 2014 Star Brilliant <m13253@hotmail.com>
 --
@@ -24,7 +24,7 @@ set mcchat_clipboard to ""
 try
 	set mcchat_clipboard to the clipboard
 end try
-set mcchat_input to (display dialog "±£³Ö Minecraft ´¦ÓÚÔİÍ£½çÃæ²¢ÔÚ´ËÊäÈëÁÄÌìÄÚÈİ£º" with title "Minecraft ÖĞÎÄÁÄÌì¸¨Öú¹¤¾ß" default answer mcchat_clipboard)
+set mcchat_input to (display dialog "ä¿æŒ Minecraft å¤„äºæš‚åœç•Œé¢å¹¶åœ¨æ­¤è¾“å…¥èŠå¤©å†…å®¹ï¼š" with title "Minecraft ä¸­æ–‡èŠå¤©è¾…åŠ©å·¥å…·" default answer mcchat_clipboard)
 set the clipboard to mcchat_input
 try
 	activate application "Minecraft"
