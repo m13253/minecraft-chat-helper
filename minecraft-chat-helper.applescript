@@ -35,7 +35,7 @@ tell application "System Events"
 	delay 0.25
 	keystroke "t"
 	delay 0.25
-	keystroke "v" using command down
+	keystroke "v" using control down
 	delay 0.25
 	keystroke return
 end tell
