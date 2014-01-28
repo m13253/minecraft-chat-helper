@@ -41,7 +41,7 @@ string "Minecraft".
 ## Copyright:
 
 This software is released under the MIT License. The original author is Star
-Brilliant.
+Brilliant and GengZai.
 
 This software comes with **absolutely no warranty**, the author are not
 responsible for any potentialy damage caused by this software.
@@ -86,7 +86,7 @@ Minecraft 中文聊天辅助工具
 
 ## 版权：
 
-本软件以 MIT 许可协议发布。原作者是 Star Brilliant。
+本软件以 MIT 许可协议发布。原作者是 Star Brilliant 和 耕耕耕耕耕仔。
 
 本软件**不附带任何保证**，作者不承担本软件产生的任何潜在的损失。
 
