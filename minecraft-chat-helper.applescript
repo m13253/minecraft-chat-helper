@@ -31,6 +31,8 @@ try
 end try
 tell application "System Events"
 	delay 0.25
+	keystroke tab using command down
+	delay 0.5
 	key code 53 -- escape
 	delay 0.25
 	keystroke "t"
