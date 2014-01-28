@@ -22,7 +22,7 @@
 
 set mcchat_clipboard to ""
 try
-	set mcchat_clipboard to the clipboard
+	set mcchat_clipboard to the clipboard as string
 end try
 set mcchat_input to (display dialog "保持 Minecraft 处于暂停界面并在此输入聊天内容：" with title "Minecraft 中文聊天辅助工具" default answer mcchat_clipboard)
 set the clipboard to mcchat_input
