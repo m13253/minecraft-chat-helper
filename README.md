@@ -13,6 +13,16 @@ example Super+T, to fire up `minecraft-chat-helper.sh`.
 When you are playing Minecraft, press Super+T, type what you want to say then
 click OK.
 
+### OS X
+
+Dependencies: [Quicksilver](http://qsapp.com/)
+
+In Quicksilver, add a trigger to `minecraft-chat-helper.applescript` and bind
+it to a hotkey, for example, Control+T.
+
+When you are playing Minecraft, press Control+T, type what you want to say
+then click OK.
+
 ### Windows:
 
 Dependencies: Windows Internet Explorer
@@ -51,6 +61,15 @@ Minecraft 中文聊天辅助工具
 `minecraft-chat-helper.sh` 脚本。
 
 当进行 Minecraft 游戏的时候，按 Super+T，输入聊天内容并点击确定。
+
+### OS X
+
+依赖项：[Quicksilver](http://qsapp.com/)
+
+在 Quicksilver 中，添加一个到 `minecraft-chat-helper.applescript` 的触发器，并绑
+定到一组快捷键，比如 Control+T。
+
+当进行 Minecraft 游戏的时候，按 Control+T，输入聊天内容并点击确定。
 
 ### Windows：
 
