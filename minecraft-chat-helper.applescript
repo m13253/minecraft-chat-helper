@@ -22,9 +22,9 @@
 
 set mcchat_clipboard to ""
 try
-	set mcchat_clipboard to the clipboard
+	set the clipboard to mcchat_clipboard
 end try
-set mcchat_input to (display dialog "保持 Minecraft 处于暂停界面并在此输入聊天内容：" with title "Minecraft 中文聊天辅助工具" default answer mcchat_clipboard)
+set mcchat_input to (display dialog "淇濇寔 Minecraft 澶勪簬鏆傚仠鐣岄潰骞跺湪姝よ緭鍏ヨ亰澶╁唴瀹癸細" with title "Minecraft 涓枃鑱婂ぉ杈呭姪宸ュ叿" default answer mcchat_clipboard)
 set the clipboard to mcchat_input
 try
 	activate application "Minecraft"
@@ -35,7 +35,7 @@ tell application "System Events"
 	delay 0.25
 	keystroke "t"
 	delay 0.25
-	keystroke "v" using command down
+	keystroke "v" using control down
 	delay 0.25
 	keystroke return
 end tell
