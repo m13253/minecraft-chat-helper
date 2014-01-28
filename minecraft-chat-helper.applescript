@@ -26,9 +26,6 @@ try
 end try
 set mcchat_input to (display dialog "保持 Minecraft 处于暂停界面并在此输入聊天内容：" with title "Minecraft 中文聊天辅助工具" default answer mcchat_clipboard)
 set the clipboard to mcchat_input
-try
-	activate application "Minecraft"
-end try
 tell application "System Events"
 	delay 0.25
 	keystroke tab using command down
