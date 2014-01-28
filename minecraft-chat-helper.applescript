@@ -30,14 +30,13 @@ try
 	activate application "Minecraft"
 end try
 tell application "System Events"
-	delay 0.25
-	keystroke tab using command down
+	keystroke tab using command down -- Switch to Minecraft
 	delay 0.5
-	key code 53 -- escape
+	key code 53 -- "Escape" to quit pause menu
 	delay 0.25
 	keystroke "t"
 	delay 0.25
-	keystroke "v" using control down
+	keystroke "v" using control down -- Paste
 	delay 0.25
 	keystroke return
 end tell
