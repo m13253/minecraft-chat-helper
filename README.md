@@ -89,3 +89,7 @@ Minecraft 中文聊天辅助工具
 本软件以 MIT 许可协议发布。原作者是 Star Brilliant。
 
 本软件**不附带任何保证**，作者不承担本软件产生的任何潜在的损失。
+
+## 相关页面
+
+MCBBS 论坛：<http://www.mcbbs.net/thread-227925-1-1.html>
