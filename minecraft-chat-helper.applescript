@@ -1,6 +1,6 @@
 -- The MIT License (MIT)
 --
--- Copyright (c) 2014 Star Brilliant <m13253@hotmail.com>
+-- Copyright (c) 2014 Star Brilliant <m13253@hotmail.com> & Lancelot Fong <ilbfy08@gmail.com>
 --
 -- Permission is hereby granted, free of charge, to any person obtaining a copy
 -- of this software and associated documentation files (the "Software"), to deal
@@ -22,9 +22,9 @@
 
 set mcchat_clipboard to ""
 try
-	set the clipboard to mcchat_clipboard
+	set mcchat_clipboard to the clipboard
 end try
-set mcchat_input to (display dialog "保持 Minecraft 处于暂停界面并在此输入聊天内容：" with title "Minecraft 中文聊天辅助工具" default answer mcchat_clipboard)
+set mcchat_input to the text returned of (display dialog "保持 Minecraft 处于暂停界面并在此输入聊天内容：" with title "Minecraft 中文聊天辅助工具" default answer mcchat_clipboard)
 set the clipboard to mcchat_input
 tell application "System Events"
 	delay 0.25
