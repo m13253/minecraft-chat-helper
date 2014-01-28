@@ -15,7 +15,9 @@ click OK.
 
 ### OS X
 
-Dependencies: [Quicksilver](http://qsapp.com/)
+Dependencies: [Quicksilver](http://qsapp.com/) (or
+[FastScripts](https://itunes.apple.com/us/app/fastscripts/id446994638) or any
+other apps supporting executing AppleScripts with a hotkey)
 
 In Quicksilver, add a trigger to `minecraft-chat-helper.applescript` and bind
 it to a hotkey, for example, Control+T.
@@ -64,7 +66,9 @@ Minecraft 中文聊天辅助工具
 
 ### OS X
 
-依赖项：[Quicksilver](http://qsapp.com/)
+依赖项：[Quicksilver](http://qsapp.com/)（或
+[FastScripts](https://itunes.apple.com/us/app/fastscripts/id446994638) 或其他支
+持通过快捷键启动 AppleScripts 脚本的应用）
 
 在 Quicksilver 中，添加一个到 `minecraft-chat-helper.applescript` 的触发器，并绑
 定到一组快捷键，比如 Control+T。
