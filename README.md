@@ -43,7 +43,7 @@ string "Minecraft".
 ## Copyright:
 
 This software is released under the MIT License. The original author is Star
-Brilliant and Lancelot Fong.
+Brilliant , Lancelot Fong and Arthur200000.
 
 This software comes with **absolutely no warranty**, the author are not
 responsible for any potentialy damage caused by this software.
