@@ -22,12 +22,10 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 -- THE SOFTWARE.
 
-set user_locale to user locale of (get system info)
---get locale name.
 
-if user_locale = "zh_CN" then
-	set keepPaused to "±£³Ö Minecraft ´¦ÓÚÔİÍ£½çÃæ²¢ÔÚ´ËÊäÈëÁÄÌìÄÚÈİ£º"
-	set appName to "Minecraft ÖĞÎÄÁÄÌì¸¨Öú¹¤¾ß"
+if user locale of (get system info) = "zh_CN" then
+	set keepPaused to "ï¿½ï¿½ï¿½ï¿½ Minecraft ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½æ²¢ï¿½Ú´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½İ£ï¿½"
+	set appName to "Minecraft ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì¸¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
 else
 	set keepPaused to "Press ESC to pause minecraft and then type in your message here:"
 	set appName to "Minecraft CJK input Helper"
