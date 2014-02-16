@@ -24,8 +24,8 @@
 
 
 if user locale of (get system info) = "zh_CN" then
-	set keepPaused to "���� Minecraft ������ͣ���沢�ڴ������������ݣ�"
-	set appName to "Minecraft �������츨������"
+	set keepPaused to "保持 Minecraft 处于暂停界面并在此输入聊天内容："
+	set appName to "Minecraft 中文聊天辅助工具"
 else
 	set keepPaused to "Press ESC to pause minecraft and then type in your message here:"
 	set appName to "Minecraft CJK input Helper"
