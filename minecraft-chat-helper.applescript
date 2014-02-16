@@ -1,7 +1,8 @@
-ï»¿-- The MIT License (MIT)
+-- The MIT License (MIT)
 --
 -- Copyright (c) 2014 Star Brilliant <m13253@hotmail.com>
 -- Copyright (c) 2014 Lancelot Fong <ilbfy08@gmail.com>
+-- Copyright (c) 2014 Arthur200000 <crashedsystem67@gmail.com> 
 --
 -- Permission is hereby granted, free of charge, to any person obtaining a copy
 -- of this software and associated documentation files (the "Software"), to deal
@@ -21,20 +22,34 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 -- THE SOFTWARE.
 
+set user_locale to user locale of (get system info)
+--get locale name.
+
+if user_locale = "zh*" then
+	set keepPaused to "±£³Ö Minecraft ´¦ÓÚÔİÍ£½çÃæ²¢ÔÚ´ËÊäÈëÁÄÌìÄÚÈİ£º"
+	set appName to "Minecraft ÖĞÎÄÁÄÌì¸¨Öú¹¤¾ß"
+else
+	set keepPaused to "Press ESC to pause minecraft and then type in your message here:"
+	set appName to "Minecraft CJK input Helper"
+end if
+-- All kinds of Chinese in just one expressionÿ.WTF 
+-- So we will have something like kr* ja* en* ÿÿ
+
 set mcchat_clipboard to ""
 try
-	set mcchat_clipboard to the clipboard as string
+	set mcchat_clipboard to the clipboard
 end try
-set mcchat_input to the text returned of (display dialog "ä¿æŒ Minecraft å¤„äºæš‚åœç•Œé¢å¹¶åœ¨æ­¤è¾“å…¥èŠå¤©å†…å®¹ï¼š" with title "Minecraft ä¸­æ–‡èŠå¤©è¾…åŠ©å·¥å…·" default answer mcchat_clipboard)
+set mcchat_input to the text returned of (display dialog "±£³Ö Minecraft ´¦ÓÚÔİÍ£½çÃæ²¢ÔÚ´ËÊäÈëÁÄÌìÄÚÈİ£º" with title "Minecraft ÖĞÎÄÁÄÌì¸¨Öú¹¤¾ß" default answer mcchat_clipboard)
 set the clipboard to mcchat_input
 tell application "System Events"
-	keystroke tab using command down -- Switch to Minecraft
+	delay 0.25
+	keystroke tab using command down
 	delay 0.5
-	key code 53 -- "Escape" to quit pause menu
+	key code 53 -- escape
 	delay 0.25
 	keystroke "t"
 	delay 0.25
-	keystroke "v" using control down -- Paste
+	keystroke "v" using control down
 	delay 0.25
 	keystroke return
 end tell
