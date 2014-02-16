@@ -25,31 +25,29 @@
 set user_locale to user locale of (get system info)
 --get locale name.
 
-if user_locale = "zh*" then
+if user_locale = "zh_CN" then
 	set keepPaused to "±£³Ö Minecraft ´¦ÓÚÔİÍ£½çÃæ²¢ÔÚ´ËÊäÈëÁÄÌìÄÚÈİ£º"
 	set appName to "Minecraft ÖĞÎÄÁÄÌì¸¨Öú¹¤¾ß"
 else
 	set keepPaused to "Press ESC to pause minecraft and then type in your message here:"
 	set appName to "Minecraft CJK input Helper"
 end if
--- All kinds of Chinese in just one expressionÿ.WTF 
--- So we will have something like kr* ja* en* ÿÿ
 
 set mcchat_clipboard to ""
 try
-	set mcchat_clipboard to the clipboard
+	set mcchat_clipboard to the clipboard as string
 end try
-set mcchat_input to the text returned of (display dialog "±£³Ö Minecraft ´¦ÓÚÔİÍ£½çÃæ²¢ÔÚ´ËÊäÈëÁÄÌìÄÚÈİ£º" with title "Minecraft ÖĞÎÄÁÄÌì¸¨Öú¹¤¾ß" default answer mcchat_clipboard)
+set mcchat_input to the text returned of (display dialog keepPaused with title appName default answer mcchat_clipboard)
 set the clipboard to mcchat_input
 tell application "System Events"
 	delay 0.25
 	keystroke tab using command down
 	delay 0.5
-	key code 53 -- escape
+	key code 53 -- "Escape" to quit pause menu
 	delay 0.25
 	keystroke "t"
 	delay 0.25
-	keystroke "v" using control down
+	keystroke "v" using control down -- Paste
 	delay 0.25
 	keystroke return
 end tell
