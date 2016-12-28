@@ -26,12 +26,16 @@
 set -e
 which zenity &>/dev/null || (echo 'ERROR: cannot find "zenity"' >&2; exit 2)
 which xdotool &>/dev/null || (echo 'ERROR: cannot find "xdotool"' >&2; zenity --error --text 'ERROR: cannot find "xdotool"' --title 'Minecraft Chat Helper'; exit 2)
+_id="$(xdotool search --class "minecraft ")"
+test -z "$_id" && exit 0
 _mcchat_input="$(zenity --entry --text 'Type what you want to type here:' --title 'Minecraft Chat Helper')"
 test -z "$_mcchat_input" && exit 0
 #wmctrl -a 'Minecraft'
-xdotool key --clearmodifiers Escape
+xdotool windowfocus --sync "$_id"
 sleep 0.25
-xdotool key t
+xdotool key --window "$_id" --clearmodifiers Escape
 sleep 0.25
-xdotool type --delay 150 "$_mcchat_input"
+xdotool key --window "$_id" t
+sleep 0.25
+xdotool type --window "$_id" --delay 150 "$_mcchat_input"
 xdotool key Return
