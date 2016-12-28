@@ -23,9 +23,9 @@
 # THE SOFTWARE.
 
 set -e
-which zenity &>/dev/null || (echo '错误：zenity 程序未安装。' >&2; exit 2)
-which xdotool &>/dev/null || (echo '错误：xdotool 程序未安装。' >&2; zenity --error --text '错误：xdotool 程序未安装' --title 'Minecraft 中文聊天辅助工具'; exit 2)
-_mcchat_input="$(zenity --entry --text '保持 Minecraft 处于暂停界面并在此输入聊天内容：' --title 'Minecraft 中文聊天辅助工具')"
+which zenity &>/dev/null || (echo 'ERROR: cannot find "zenity"' >&2; exit 2)
+which xdotool &>/dev/null || (echo 'ERROR: cannot find "xdotool"' >&2; zenity --error --text 'ERROR: cannot find "xdotool"' --title 'Minecraft Chat Helper'; exit 2)
+_mcchat_input="$(zenity --entry --text 'Type what you want to type here:' --title 'Minecraft Chat Helper')"
 test -z "$_mcchat_input" && exit 0
 #wmctrl -a 'Minecraft'
 xdotool key --clearmodifiers Escape
